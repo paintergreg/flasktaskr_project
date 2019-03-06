@@ -4,8 +4,7 @@ language:
 
 # specify python version(s)
 python:
-  - "3.7"
-  - "2.7"
+  - "3.6"
 
 # install dependencies
 install:
@@ -23,5 +22,5 @@ deploy:
   app: flasktaskr
   on:
     branch: master
-    python: '3.7'
+    python: '3.6'
     repo: paintergreg/flasktaskr_project
