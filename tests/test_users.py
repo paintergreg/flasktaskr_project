@@ -45,7 +45,7 @@ class UsersTests(unittest.TestCase):
 
     def register(self, name, email, password, confirm):
         return self.app.post(
-            'register/',
+            '/register',
             data=dict(name=name, email=email, password=password, confirm=confirm),
             follow_redirects=True
         )
